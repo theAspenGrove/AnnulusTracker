@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import List from '../components/list'
 
+import PageHeader from '@/components/pageHeader'
+
 export default function Home() {
   return (
     <>
@@ -10,12 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className='container'>
-        <div className='row'>
-          <div className='col CenterCol'>
-            <h1>Annulus Tracker</h1>
-            <p>Track your growth and hardships</p>
-          </div>
-        </div>
+        <PageHeader />
         <div className='row'>
           <div className='col CenterCol'>
             <List />
