@@ -1,0 +1,28 @@
+.LeftCol {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+.RightCol {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+
+.CenterCol {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  p{
+    text-align: center;
+  }
+}
+
+.col h1, .col h2, .col h3, .col h4, .col h5, .col h6 {
+  text-align: center;
+}

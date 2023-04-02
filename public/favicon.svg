@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="emoji"
+   viewBox="0 0 72 72"
+   version="1.1"
+   sodipodi:docname="ico.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs844" />
+  <sodipodi:namedview
+     id="namedview842"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="11.222222"
+     inkscape:cx="43.173267"
+     inkscape:cy="36"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="emoji" />
+  <g
+     id="color">
+    <circle
+       cx="36"
+       cy="36"
+       r="28"
+       fill="#f1b31c"
+       id="circle835" />
+  </g>
+  <g
+     id="line">
+    <circle
+       cx="36"
+       cy="36"
+       r="28"
+       fill="none"
+       stroke="#000"
+       stroke-linejoin="round"
+       stroke-width="2"
+       id="circle838" />
+  </g>
+  <g
+     id="g953"
+     transform="translate(0,-6)">
+    <g
+       id="color-7">
+      <circle
+         cx="36"
+         cy="36"
+         r="22"
+         fill="#3f3f3f"
+         stroke="none"
+         stroke-miterlimit="10"
+         stroke-width="2"
+         id="circle926" />
+      <circle
+         cx="36"
+         cy="36"
+         r="12.7559"
+         fill="#9b9b9a"
+         stroke="none"
+         stroke-miterlimit="10"
+         stroke-width="2"
+         id="circle928" />
+    </g>
+    <g
+       id="hair" />
+    <g
+       id="skin" />
+    <g
+       id="skin-shadow" />
+    <g
+       id="line-2">
+      <circle
+         cx="36"
+         cy="36"
+         r="22"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         stroke-width="2"
+         id="circle934" />
+      <circle
+         cx="36"
+         cy="36"
+         r="12.7559"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         stroke-width="2"
+         id="circle936" />
+    </g>
+  </g>
+</svg>
