@@ -14,7 +14,7 @@ export default function Home() {
       <div className='container'>
         <PageHeader />
         <div className='row'>
-          <div className='col CenterCol'>
+          <div className="listContainer">
             <List />
           </div>
         </div>

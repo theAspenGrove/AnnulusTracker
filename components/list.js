@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ToDoItem from './ToDoItem';
 
 export default function List(){
     const [ toDoList, setToDoList ] = useState([{id: 0, task:"Do the dishes", status:"todo"}, {id:1, task:"Do the laundry", status:"todo"}, {id:3, task:"Do the yard work", status:"todo"}]);
@@ -20,33 +21,9 @@ export default function List(){
 
     return (
         <>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Task</th>
-                        <th>Status</th>
-                        <th>Update</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {/* map through the list and create a table row for each task */}
-                    {toDoList.map(toDoListItem => (
-                        <tr>
-                            <td>
-                                {toDoListItem.task}
-                            </td>
-                            <td>
-                                {toDoListItem.status}
-                            </td>
-                            <td>
-                                {/* pass the modifyStatus function and the id of the task to the StatusButtons component} */}
-                                {/* todo make better buttons */}
-                                <StatusButtons modifyStatus={modifyStatus} id={toDoListItem.id}/>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            {toDoList.map(toDoListItem => (
+                <ToDoItem modifyStatus={modifyStatus} toDoListItem={toDoListItem}/>
+            ))}
             {/* load the ToDo form component and pass the addTask function to it */}
             <ToDoForm addTask={addTask}/>
         </>
@@ -76,15 +53,3 @@ const ToDoForm = ({ addTask }) => {
     );
 };
 
-const StatusButtons = ({ modifyStatus, id }) => {
-    return (
-        <>
-            {/* when the user clicks on a button, call the modifyStatus function and pass the id of the task and the new status as arguments */}
-            {/* todo make better buttons */}
-            <button onClick={() => modifyStatus(id,"ToDo")}>To Do</button>
-            <button onClick={() => modifyStatus(id,"In Progress")}>In Progress</button>
-            <button onClick={() => modifyStatus(id,"Done")}>Done</button>
-            <button onClick={() => modifyStatus(id,"Missed :'(")}>Missed</button>
-        </>
-    )
-}

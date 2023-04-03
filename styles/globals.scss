@@ -11,3 +11,43 @@
 .col h1, .col h2, .col h3, .col h4, .col h5, .col h6 {
   text-align: center;
 }
+
+.TodoListItem{
+  background-color: lightgray;
+  line-height: normal;
+  border-bottom: 2px solid black;
+  div:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.TaskRow{
+  display: flex;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.quickDoneButton{
+  width: 5%;
+  float: right;
+  margin-left: 2%;
+}
+
+.ToDoItemStatus{
+  width: 45%;
+  padding-left: 5%;
+}
+
+.ToDoItemTask{
+  width: 45%;
+  padding-left: 5%;
+}
+
+.listContainer{
+  margin: 0 auto;
+  width: 25%;
+  height: 100%;
+  overflow: auto;
+  line-height: 0%;
+}
