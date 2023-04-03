@@ -2,12 +2,13 @@ import { useState } from 'react';
 import ToDoItem from './ToDoItem';
 
 export default function List(){
-    const [ toDoList, setToDoList ] = useState([{id: 0, task:"Do the dishes", status:"todo"}, {id:1, task:"Do the laundry", status:"todo"}, {id:3, task:"Do the yard work", status:"todo"}]);
+    const [ toDoList, setToDoList ] = useState([{id: 0, task:"Do the dishes", status:"ToDo"}, {id:1, task:"Do the laundry", status:"ToDo"}, {id:3, task:"Do the yard work", status:"ToDo"}]);
 
     //add a task to the active list by creating a copy of the current list, adding the new task, and setting the new list as the current list
     const addTask = (userInput ) => {
         let copy = [...toDoList];
-        copy = [...copy, {id:toDoList.length + 1, task:userInput, status:"todo" }];
+        if(userInput === "") return;
+        copy = [...copy, {id:toDoList.length + 1, task:userInput, status:"ToDo" }];
         setToDoList(copy);
     }
 
