@@ -19,7 +19,6 @@
 }
 
 .TaskRow{
-  padding-top: 1%;
   display: flex;
   vertical-align: middle;
   width: 100%;
@@ -27,6 +26,7 @@
 
 .quickDoneButton{
   width: 15%;
+  padding-left: 2%;
   button{
     width: 50%;
     height: 100%;
@@ -38,13 +38,23 @@
 }
 
 .ToDoItemStatus{
-  width: 45%;
-  padding-left: 5%;
+  width: 42%;
+  padding: 1% 5%;
+  border-right: 2px solid rgb(126, 126, 126);
+  a{
+    display: block;
+    width: 100%;
+  }
 }
 
 .ToDoItemTask{
-  width: 45%;
-  padding-left: 5%;
+  width: 42%;
+  padding: 1% 5%;
+  border-right: 2px solid rgb(126, 126, 126);
+  a{
+    display: block;
+    width: 100%;
+  }
 }
 
 .listContainer{
