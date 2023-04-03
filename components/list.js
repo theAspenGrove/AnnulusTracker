@@ -20,10 +20,17 @@ export default function List(){
     setToDoList(mapped);
     }
 
+    const modifyTask = (id,newTask) => {
+        let mapped = toDoList.map(task => {
+            return task.id === Number(id) ? { ...task, task:newTask } : { ...task};
+        });
+        setToDoList(mapped);
+    }
+
     return (
         <>
             {toDoList.map(toDoListItem => (
-                <ToDoItem modifyStatus={modifyStatus} toDoListItem={toDoListItem}/>
+                <ToDoItem modifyTask={modifyTask} modifyStatus={modifyStatus} toDoListItem={toDoListItem}/>
             ))}
             {/* load the ToDo form component and pass the addTask function to it */}
             <ToDoForm addTask={addTask}/>

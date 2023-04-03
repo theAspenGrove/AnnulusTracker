@@ -16,22 +16,25 @@
   background-color: lightgray;
   line-height: normal;
   border-bottom: 2px solid black;
-  div:after{
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
+
 .TaskRow{
+  padding-top: 1%;
   display: flex;
   vertical-align: middle;
   width: 100%;
 }
 
 .quickDoneButton{
-  width: 5%;
-  float: right;
-  margin-left: 2%;
+  width: 15%;
+  button{
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.TaskStatusButtons{
+  margin: 0 auto;
 }
 
 .ToDoItemStatus{
